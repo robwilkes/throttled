@@ -111,10 +111,18 @@ sudo ./throttled/install.sh
 ```
 Feedback about Fedora installation is welcome.
 
-### openSUSE
+### openSUSE Leap
 User *brycecordill* reported that the following dependencies are required for installing in openSUSE, tested on openSUSE 15.0 Leap.
 ```
 sudo zypper install gcc make python3-devel dbus-1-glib-devel python3-cairo-devel cairo-devel python3-gobject-cairo gobject-introspection-devel
+git clone https://github.com/erpalma/throttled.git
+sudo ./throttled/install.sh
+```
+
+### openSUSE Tumbleweed (2021)
+User *robwilkes* reported that the following dependencies are required for installing in openSUSE, tested on openSUSE Tumbleweed.
+```
+sudo zypper install gcc make python38-devel dbus-1-glib-devel python38-pycairo-devel cairo-devel python38-gobject-cairo gobject-introspection-devel
 git clone https://github.com/erpalma/throttled.git
 sudo ./throttled/install.sh
 ```
