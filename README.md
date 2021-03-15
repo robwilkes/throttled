@@ -1,8 +1,11 @@
-# Note
+# Fix Intel CPU Throttling on Linux
+
+## Note
 This is a fork of: https://github.com/erpalma/throttled
+
 All I have done is rename all occurrances of lenovo_fix to throttled as I didn't like the mixed terminology, and changed the max temp on AC to 90 'C (personal preference)
 
-# Fix Intel CPU Throttling on Linux
+## Overview
 This tool was originally developed to fix Linux CPU throttling issues affecting Lenovo T480 / T480s / X1C6 as described [here](https://www.reddit.com/r/thinkpad/comments/870u0a/t480s_linux_throttling_bug/).
 
 The CPU package power limit (PL1/2) is forced to a value of **44 W** (29 W on battery) and the temperature trip point to **90 'C** (85 'C on battery) by overriding default values in MSR and MCHBAR every 5 seconds (30 on battery) to block the Embedded Controller from resetting these values to default.
