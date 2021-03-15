@@ -814,7 +814,7 @@ def main():
         nargs='?',
         help='realtime monitoring of throttling causes (default 1s)',
     )
-    parser.add_argument('--config', default='/etc/lenovo_fix.conf', help='override default config file path')
+    parser.add_argument('--config', default='/etc/throttled.conf', help='override default config file path')
     parser.add_argument('--force', action='store_true', help='bypass compatibility checks (EXPERTS only)')
     parser.add_argument('--log', metavar='/path/to/file', help='log to file instead of stdout')
     args = parser.parse_args()
