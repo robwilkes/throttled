@@ -1,3 +1,7 @@
+# Note
+This is a fork of: https://github.com/erpalma/throttled
+All I have done is rename all occurrances of lenovo_fix to throttled as I didn't like the mixed terminology, and changed the max temp on AC to 90 'C (personal preference)
+
 # Fix Intel CPU Throttling on Linux
 This tool was originally developed to fix Linux CPU throttling issues affecting Lenovo T480 / T480s / X1C6 as described [here](https://www.reddit.com/r/thinkpad/comments/870u0a/t480s_linux_throttling_bug/).
 
